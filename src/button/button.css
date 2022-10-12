@@ -1,0 +1,18 @@
+.btn {
+  display: block;
+  width: max-content;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 600;
+  text-decoration: none;
+  color: #411412;
+  background-color: #d11e42;
+  padding: 1rem;
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+
+.btn:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  color: #fff;
+}
