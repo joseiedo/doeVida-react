@@ -8,26 +8,22 @@ const Shortcuts = () => {
   return (
     <div>
       <ul className="shortcuts">
-        <div>
-          <li>
-            <img src={handHeartImg} alt="" />
-            <p>Posso doar sangue?</p>
-          </li>
-          <li>
-            <img src={heartbeatImg} alt="" />
-            <p>Onde doar?</p>
-          </li>
-        </div>
-        <div>
-          <li>
-            <img src={markerImg} alt="" />
-            <p>Pré cuidados</p>
-          </li>
-          <li>
-            <img src={bloodImg} alt="" />
-            <p>Por que doar?</p>
-          </li>
-        </div>
+        <li>
+          <img src={handHeartImg} alt="" />
+          <a href="/">Posso doar?</a>
+        </li>
+        <li>
+          <img src={heartbeatImg} alt="" />
+          <a href="/">Onde doar?</a>
+        </li>
+        <li>
+          <img src={markerImg} alt="" />
+          <a href="/">Pré cuidados</a>
+        </li>
+        <li>
+          <img src={bloodImg} alt="" />
+          <a href="/">Por que doar?</a>
+        </li>
       </ul>
     </div>
   );

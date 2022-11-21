@@ -1,4 +1,37 @@
 .shortcuts {
+  padding-top: 3.75rem;
+  padding-bottom: 1.875rem;
+  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 150px);
+  justify-items: center;
+  list-style: none;
+
+  font-family: "Work Sans", sans-serif;
+  font-size: 1rem;
+
+  gap: 2rem;
+}
+
+.shortcuts li {
+  width: 100%;
+  display: grid;
+  place-items: center;
+  padding: 1rem;
+
+  text-align: center;
+
+  gap: 1rem;
+
+  background-color: rgba(0, 0, 0, 0.03);
+  border-radius: 8px;
+}
+
+.shortcuts li a {
+  text-decoration: none;
+  color: inherit;
+}
+/* .shortcuts {
   padding-top: 60px;
   padding-bottom: 35px;
   font-family: "Work Sans", sans-serif;
@@ -53,4 +86,4 @@
     gap: 10px;
     margin-bottom: 20px;
   }
-}
+} */
