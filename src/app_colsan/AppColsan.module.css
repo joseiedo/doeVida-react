@@ -24,6 +24,11 @@
 }
 
 @media (max-width: 920px) {
+  .bg {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
   .title {
     font-size: 3rem;
   }
