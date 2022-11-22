@@ -1,24 +1,8 @@
 import React from "react";
-import "./header.css";
 import styles from "./header.module.css";
 
 const Header = () => {
-  const [mobile, setMobile] = React.useState(false);
   const [mobileMenu, setMobileMenu] = React.useState(false);
-
-  React.useEffect(() => {
-    function handleResize() {
-      if (window.matchMedia("(max-width: 800px)").matches) {
-        setMobile(true);
-      } else {
-        setMobile(false);
-      }
-    }
-
-    window.addEventListener("resize", handleResize);
-    handleResize();
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
 
   return (
     <header className={styles.header}>

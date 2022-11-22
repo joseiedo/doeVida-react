@@ -6,13 +6,23 @@ import Hero from "./hero/Hero";
 import OndeDoar from "./onde_doar/OndeDoar";
 import Requisitos from "./requisitos/Requisitos";
 import Shortcuts from "./shortcuts/Shortcuts";
+import bg from "./assets/fundo-intro.jpg";
+import styles from "./hero/Hero.module.css";
 
 const App = () => {
   return (
     <>
       <Header />
       <main>
-        <Hero />
+        <Hero
+          img={bg}
+          texto={
+            <h1 className={styles.text}>
+              Uma doação pode salvar até{" "}
+              <span className="destaque">quatro vidas.</span>
+            </h1>
+          }
+        />
         <Shortcuts />
       </main>
       <Requisitos />

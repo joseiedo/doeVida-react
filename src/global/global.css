@@ -19,3 +19,7 @@ a {
   list-style: none;
   color: inherit;
 }
+
+.destaque {
+  background-color: #d11e42;
+}
