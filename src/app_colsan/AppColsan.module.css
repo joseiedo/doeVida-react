@@ -1,0 +1,43 @@
+.bg {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 1200px;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.title {
+  font-size: 4rem;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  color: #323232;
+}
+
+.text {
+  font-family: "Work Sans", Arial, Helvetica, sans-serif;
+  max-width: 44ch;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 920px) {
+  .title {
+    font-size: 3rem;
+  }
+  .container {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  .content {
+    padding: 20px 20px;
+  }
+
+  .container img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+}

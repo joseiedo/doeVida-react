@@ -1,14 +1,14 @@
 import React from "react";
 import reqImg from "../assets/requisitos.jpg";
 import Button from "../button/Button";
-import "./requisitos.css";
+import styles from "./Requisitos.module.css";
 
 const Requisitos = () => {
   return (
-    <section className="requisitos">
-      <div>
-        <h2>O que é preciso para doar?</h2>
-        <ul>
+    <section className={styles.container}>
+      <div className={styles.content}>
+        <h2 className={styles.title}>O que é preciso para doar?</h2>
+        <ul className={styles.requisitos}>
           <li>
             Documento original de identidade com foto e dentro do prazo de
             validade
