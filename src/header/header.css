@@ -3,14 +3,17 @@
   background-color: #d11e42;
 }
 
+.header ul li a {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 600;
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+/* 
 .header .menu {
   display: none;
-}
-.header ul {
-  background-color: #d11e42;
-  display: flex;
-  justify-content: center;
-  height: 60px;
 }
 
 .header ul li {
@@ -19,17 +22,6 @@
 
 .header ul li + li {
   margin-left: 24px;
-}
-.header ul li a {
-  font-family: "Work Sans", sans-serif;
-  font-weight: 600;
-  text-decoration: none;
-  cursor: pointer;
-  color: #fff;
-  text-transform: uppercase;
-  height: 100%;
-  display: flex;
-  align-items: center;
 }
 
 .header ul li a:hover {
@@ -112,4 +104,4 @@
 
 .menu-control {
   display: none;
-}
+} */
