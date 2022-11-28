@@ -1,6 +1,6 @@
 import React from "react";
-import imgBg from "../assets/ondedoar2.jpg";
-import Button from "../button/Button";
+import imgBg from "../../assets/ondedoar2.jpg";
+import Button from "../../button/Button";
 import styles from "./OndeDoar.module.css";
 const OndeDoar = () => {
   return (

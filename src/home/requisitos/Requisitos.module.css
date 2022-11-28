@@ -9,16 +9,23 @@
   margin: 0 auto;
 }
 
+.container img {
+  border-radius: 5px;
+  box-shadow: 10px 10px 0px #d11e42;
+}
+
 .title {
-  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
   color: #414141;
-  font-size: 3rem;
+  font-size: 4rem;
+  font-weight: 800;
 }
 
 .requisitos {
-  font-family: "Work Sans", Arial, Helvetica, sans-serif;
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
   font-size: 1.125rem;
-  padding: 0.75rem;
+  padding: 1rem;
+  padding-left: 0;
 }
 
 .requisitos li + li {
@@ -39,7 +46,7 @@
   min-height: 8px;
   background-color: #d52d2d;
   border-radius: 4px;
-  margin-right: 5px;
+  margin-right: 1rem;
 }
 
 .requisitos a {
@@ -61,5 +68,6 @@
     height: 300px;
     object-fit: cover;
     border-radius: 5px;
+    box-shadow: none;
   }
 }

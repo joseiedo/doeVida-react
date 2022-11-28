@@ -24,19 +24,19 @@ const Header = () => {
       <nav className={mobileMenu ? styles.navMenu : styles.inactiveNavMenu}>
         <ul>
           <li>
-            <a href="#">início</a>
+            <a href="www.google.com">início</a>
           </li>
           <li>
-            <a href="#">hemocentros</a>
+            <a href="www.google.com">hemocentros</a>
           </li>
           <li>
-            <a href="#">etapas</a>
+            <a href="www.google.com">etapas</a>
           </li>
           <li>
-            <a href="#">por que doar?</a>
+            <a href="www.google.com">por que doar?</a>
           </li>
           <li>
-            <a href="#">teste de elegibilidade</a>
+            <a href="www.google.com">teste de elegibilidade</a>
           </li>
         </ul>
       </nav>

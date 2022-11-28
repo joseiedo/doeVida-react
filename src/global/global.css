@@ -4,6 +4,7 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
 }
 
 img {
@@ -23,3 +24,18 @@ a {
 .destaque {
   background-color: #d11e42;
 }
+
+.animeLeft {
+  animation: animeLeft 0.5s ease-in;
+}
+
+@keyframes animeLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  to {
+    transform: initial;
+    opacity: 1;
+  }
+} ;

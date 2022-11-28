@@ -1,34 +1,18 @@
 import React from "react";
-import AppColsan from "./app_colsan/AppColsan";
-import Footer from "./footer/Footer";
-import Header from "./header/Header";
-import Hero from "./hero/Hero";
-import OndeDoar from "./onde_doar/OndeDoar";
-import Requisitos from "./requisitos/Requisitos";
-import Shortcuts from "./shortcuts/Shortcuts";
-import bg from "./assets/fundo-intro.jpg";
-import styles from "./hero/Hero.module.css";
-
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Footer from "./global/footer/Footer";
+import Header from "./global/header/Header";
+import Home from "./home/Home";
 const App = () => {
   return (
     <>
-      <Header />
-      <main>
-        <Hero
-          img={bg}
-          texto={
-            <h1 className={styles.text}>
-              Uma doação pode salvar até{" "}
-              <span className="destaque">quatro vidas.</span>
-            </h1>
-          }
-        />
-        <Shortcuts />
-      </main>
-      <Requisitos />
-      <OndeDoar />
-      <AppColsan />
-      <Footer />
+      <BrowserRouter>
+        <Header />
+        <Routes>
+          <Route path="/" element={<Home />} />
+        </Routes>
+        <Footer />
+      </BrowserRouter>
     </>
   );
 };

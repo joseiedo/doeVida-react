@@ -5,7 +5,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, 12.5rem);
   justify-items: center;
-  background-color: rgb(242, 242, 242);
+  background-color: #eee;
   list-style: none;
 
   font-family: "Work Sans", sans-serif;
@@ -27,6 +27,7 @@
   background-color: rgb(255, 255, 255);
   border-radius: 8px;
   transition: 0.3s;
+  border: 2px solid transparent;
 }
 
 .shortcuts li a {
@@ -36,5 +37,5 @@
 
 .shortcuts li:hover {
   transform: scale(1.05);
-  background-color: white;
+  border: 2px solid #d11e42;
 }

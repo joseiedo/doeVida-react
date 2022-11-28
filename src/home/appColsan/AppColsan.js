@@ -1,7 +1,6 @@
 import React from "react";
-import appColsanImg from "../assets/colsan.jpg";
-import Button from "../button/Button";
-import "./appColsan.css";
+import appColsanImg from "../../assets/colsan.jpg";
+import Button from "../../button/Button";
 import styles from "./AppColsan.module.css";
 
 const AppColsan = () => {

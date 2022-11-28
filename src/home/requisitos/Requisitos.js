@@ -1,6 +1,6 @@
 import React from "react";
-import reqImg from "../assets/requisitos.jpg";
-import Button from "../button/Button";
+import reqImg from "../../assets/requisitos.jpg";
+import Button from "../../button/Button";
 import styles from "./Requisitos.module.css";
 
 const Requisitos = () => {

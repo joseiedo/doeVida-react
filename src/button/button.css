@@ -1,10 +1,11 @@
 .btn {
   display: block;
   width: max-content;
-  font-family: "Work Sans", sans-serif;
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
   font-weight: 600;
   text-decoration: none;
-  color: #411412;
+  text-transform: uppercase;
+  color: #fff;
   background-color: #d11e42;
   padding: 1rem;
   border-radius: 5px;
