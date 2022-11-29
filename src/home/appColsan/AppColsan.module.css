@@ -14,8 +14,8 @@
 
 .container img {
   width: 100%;
-  border-radius: 5px;
   box-shadow: 10px 10px 0px #d11e42;
+  border-radius: 10px;
 }
 
 .title {
@@ -52,5 +52,6 @@
     height: 300px;
     object-fit: cover;
     box-shadow: none;
+    border-radius: 0px;
   }
 }

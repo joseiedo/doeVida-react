@@ -14,8 +14,7 @@
   width: 100%;
   margin: 0 auto;
   max-width: 75rem;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding: 1rem;
 }
 
 .headerContainer svg {

@@ -1,7 +1,7 @@
 .ondeDoarBg {
   background-color: #f7f7f7;
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+  padding-top: 7.5rem;
+  padding-bottom: 7.5rem;
 }
 .container {
   display: grid;
@@ -31,7 +31,7 @@
   width: 100%;
   object-fit: cover;
   height: 400px;
-  border-radius: 5px;
+  border-radius: 10px;
   box-shadow: -10px 10px 0px #d11e42;
 }
 
@@ -44,6 +44,10 @@
   justify-content: space-between;
 }
 @media (max-width: 900px) {
+  .ondeDoarBg {
+    padding-top: 3.75rem;
+    padding-bottom: 3.75rem;
+  }
   .container {
     grid-template-columns: 1fr;
   }
@@ -53,7 +57,7 @@
     width: 100%;
     height: 300px;
     object-fit: cover;
-    border-radius: 5px;
+    border-radius: 0px;
     box-shadow: none;
   }
 

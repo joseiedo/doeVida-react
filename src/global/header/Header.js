@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./header.module.css";
 import { ReactComponent as Logo } from "../../assets/logo.svg";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const [mobileMenu, setMobileMenu] = React.useState(false);
@@ -28,22 +29,34 @@ const Header = () => {
       <nav className={mobileMenu ? styles.navMenu : styles.inactiveNavMenu}>
         <ul>
           <li>
-            <a href="www.google.com">início</a>
+            <Link to="/" onClick={() => setMobileMenu(false)}>
+              início
+            </Link>
           </li>
           <li>
-            <a href="www.google.com">hemocentros</a>
+            <Link to="hemocentros" onClick={() => setMobileMenu(false)}>
+              hemocentros
+            </Link>
           </li>
           <li>
-            <a href="www.google.com">etapas</a>
+            <Link href="www.google.com" onClick={() => setMobileMenu(false)}>
+              etapas
+            </Link>
           </li>
           <li>
-            <a href="www.google.com">por que doar?</a>
+            <Link href="www.google.com" onClick={() => setMobileMenu(false)}>
+              por que doar?
+            </Link>
           </li>
           <li>
-            <a href="www.google.com">pré cuidados</a>
+            <Link href="www.google.com" onClick={() => setMobileMenu(false)}>
+              pré cuidados
+            </Link>
           </li>
           <li>
-            <a href="www.google.com">teste de elegibilidade</a>
+            <Link href="www.google.com" onClick={() => setMobileMenu(false)}>
+              teste de elegibilidade
+            </Link>
           </li>
         </ul>
       </nav>

@@ -21,7 +21,7 @@ const Home = () => {
             </h1>
           }
         />
-        <Shortcuts />
+        {/* <Shortcuts /> */}
       </main>
       <Requisitos />
       <OndeDoar />

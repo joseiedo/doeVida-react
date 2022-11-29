@@ -1,0 +1,8 @@
+.grid {
+  padding: 2rem 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, auto));
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 0.5rem;
+}
