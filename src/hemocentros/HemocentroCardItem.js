@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./HemocentroCardItem.module.css";
-
+import { BsTelephoneFill } from "react-icons/bs";
+import { MdOutgoingMail } from "react-icons/md";
 const HemocentroCardItem = ({ data }) => {
   return (
     <div className={styles.card}>
@@ -10,8 +11,17 @@ const HemocentroCardItem = ({ data }) => {
       <p>
         {data.endereco} | {data.cep}
       </p>
-      <p>{data.telefone}</p>
-      <p>{data.email}</p>
+      <p>
+        <BsTelephoneFill />
+        {data.telefone}
+      </p>
+      {data.email.split(",").map((m) => {
+        return (
+          <p>
+            <MdOutgoingMail /> {m}
+          </p>
+        );
+      })}
     </div>
   );
 };

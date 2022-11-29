@@ -6,8 +6,10 @@ import HemocentroCard from "./HemocentroCard";
 const Hemocentros = () => {
   const [data, setData] = React.useState([]);
   const [hemocentros, setHemocentros] = React.useState([]);
+  const [loading, setLoading] = React.useState(false);
 
   React.useEffect(() => {
+    setLoading(true);
     fetch(
       "https://raw.githubusercontent.com/joseiedo/hemocentros-json/main/hemocentros-db.json"
     )
@@ -15,12 +17,14 @@ const Hemocentros = () => {
       .then((r) => {
         setData(r);
         setHemocentros(r);
+        setLoading(false);
       });
   }, []);
 
   function handleHemocentros({ target }) {
     const opcaoEscolhida = target.value;
 
+    setLoading(true);
     if (opcaoEscolhida.toLowerCase() === "todos") {
       setHemocentros(data);
     } else {
@@ -30,6 +34,7 @@ const Hemocentros = () => {
 
       setHemocentros(hemocentrosBuscados);
     }
+    setLoading(false);
   }
 
   return (
@@ -73,7 +78,11 @@ const Hemocentros = () => {
             <option value="Tocantins">Tocantins</option>
           </select>
         </div>
-        <HemocentroCard data={hemocentros} />;
+        {loading ? (
+          <p className={styles.loading}>Carregando...</p>
+        ) : (
+          <HemocentroCard data={hemocentros} />
+        )}
       </main>
     </section>
   );
