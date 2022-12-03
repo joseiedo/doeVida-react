@@ -54,7 +54,10 @@ const Header = () => {
             </Link>
           </li>
           <li>
-            <Link href="www.google.com" onClick={() => setMobileMenu(false)}>
+            <Link
+              to="/testedeelegibilidade"
+              onClick={() => setMobileMenu(false)}
+            >
               teste de elegibilidade
             </Link>
           </li>

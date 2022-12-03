@@ -1,0 +1,70 @@
+.questionCard {
+  width: 90vw;
+  background-color: rgba(0, 0, 0, 0.03);
+  border-radius: 8px;
+  max-width: 700px;
+  margin: 0 auto;
+  height: 100vh;
+  max-height: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  margin-bottom: 4rem;
+}
+
+.questionCard > svg {
+  width: 120px;
+  height: 120px;
+  color: #a7112f;
+  margin-bottom: 3rem;
+  background-color: #eee;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.question {
+  font-size: 1.25rem;
+  max-width: 36ch;
+  margin-bottom: 2rem;
+  text-align: center;
+  line-height: 1.8rem;
+  font-weight: 400;
+  color: rgb(51, 51, 51);
+}
+
+.question a {
+  color: #a7112f;
+  font-weight: 500;
+  text-decoration: underline;
+}
+.options {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.btnprimario,
+.btnsecundario {
+  padding: 1rem;
+  font-size: 1.5rem;
+  border: 2px solid #a7112f;
+  background-color: #a7112f;
+  color: #fff;
+  border-radius: 5px;
+  display: block;
+  transition: 0.3s;
+}
+
+.btnprimario:hover,
+.btnsecundario:hover {
+  cursor: pointer;
+  filter: brightness(1.2);
+}
+
+.btnsecundario {
+  background-color: transparent;
+  color: #a7112f;
+}

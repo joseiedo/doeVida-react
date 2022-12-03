@@ -4,7 +4,7 @@ import { BsTelephoneFill } from "react-icons/bs";
 import { MdOutgoingMail } from "react-icons/md";
 const HemocentroCardItem = ({ data }) => {
   return (
-    <div className={styles.card}>
+    <div className={`animeLeft ${styles.card}`}>
       <p>
         <strong>{data.nome}</strong>
       </p>
