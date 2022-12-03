@@ -1,5 +1,4 @@
 import React from "react";
-import Shortcuts from "./shortcuts/Shortcuts";
 import AppColsan from "./appColsan/AppColsan";
 import OndeDoar from "./onde_doar/OndeDoar";
 import Requisitos from "./requisitos/Requisitos";
