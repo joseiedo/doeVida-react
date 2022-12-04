@@ -1,6 +1,7 @@
 import React from "react";
 import AppColsan from "./appColsan/AppColsan";
 import OndeDoar from "./onde_doar/OndeDoar";
+import Etapas from "./etapas/Etapas";
 import Requisitos from "./requisitos/Requisitos";
 import Hero from "./hero/Hero";
 import styles from "./hero/Hero.module.css";
@@ -24,6 +25,7 @@ const Home = () => {
       </main>
       <Requisitos />
       <OndeDoar />
+      <Etapas />
       <AppColsan />;
     </>
   );
